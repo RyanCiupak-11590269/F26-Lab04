@@ -6,11 +6,15 @@
 # Purpose: Create Simple Functions.
 # Usage: ./lab4a.py
 
-# TO DO 1: Add the docstring
-# @Function definition: add definition here
-# @param: write parameters here
-# @return: write return value here 
+# TODO 1: Define a function with the name 'is_even' with the parameters listed in README.md
 
-# TO DO 2: define the function with name `is_even`.
+    # TODO 2: Add the following doc-strings:
+    # - @function: add the definition of the function here
+    # - @param: write the parameters here
+    # - @return: write the return value here
 
-# TO DO 3: Call the function `is_even`.
+    # TODO 3: Create the functionality as described in the README.md file
+
+    # TODO 4: Do not forge to return your resulting value
+
+# TODO 5: Call the function `is_even` to confirm it works

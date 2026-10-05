@@ -147,8 +147,8 @@ In this next example, write a function `sum` that takes two numbers as parameter
 -  Call the main function inside the condition:
  
   ``` python
-if __name__ == __main__:
-main()
+if __name__ == "__main__":
+    main()
 ```
 Note that the above line checks whether the script is being run directly or being imported as a module. If it's run directly, main() is called.
 - Run your script to test it.
@@ -168,9 +168,6 @@ When calling the function, the first argument provided is assigned to the first 
     - third parameter should have a default value of +
 
 - The function performs the required operation on the two numbers and returns the result. The function should receive the parameters as positional parameters.
-- Write the `main` functions.
-- In the main function get two numbers from user.
-- In the main also ask the user to chose which operation they want to perform. Show the operation symbols in the prompt.
 - Call the  `compute` function as follows:
     ``` python
     compute(13,45,'*')
@@ -178,8 +175,10 @@ When calling the function, the first argument provided is assigned to the first 
     compute(13,45,'-')
     compute(13,45,'+')
     compute(13,45)  # since only two parameters are passed the default value of symbol should be used.
-    
     ```
+- Write the `main` functions.
+- In the main function get two numbers from user.
+- In the main also ask the user to chose which operation they want to perform. Show the operation symbols in the prompt.
 - Call the main function in the conditional statement as shown above in `lab4c`.
 - Run your script to test it.
 

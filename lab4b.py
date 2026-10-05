@@ -6,11 +6,17 @@
 # Purpose: Create Some Complex Functions.
 # Usage: ./lab4b.py
 
-# TO DO 1: Add the docstring
-# @Function definition: add definition here
-# @param: write parameters here
-# @return: write return value here
+# TODO 1: Create a function called 'even_numbers' with the parameters listed in README.md
 
-# TO DO 2: Create the function.
+    # TODO 2: Add the following doc-strings:
+        # - @function: add the definition of the function here
+        # - @param: write the parameters here
+        # - @return: write the return value here
 
-# TO DO 3: Call the function.
+    # TODO 3: Complete the functionality of the function based on README.md instructions
+
+    # TODO 4: Do not forge to return your resulting value
+
+# TODO 5: Call the function `is_even` to confirm it works
+
+
