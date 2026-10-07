@@ -10,7 +10,7 @@ def is_even(lst):
     '''
     This will create a new list of just the even numbers of a provided list
     @param: A list
-    @return: True or False
+    @return: A new list of just even numbers
       '''
     y=[]
     for i in lst:
