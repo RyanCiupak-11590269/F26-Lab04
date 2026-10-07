@@ -1,20 +1,22 @@
 # Add comments before you do anything else.
 
 #!/usr/bin/env python3
-# Author:
-# Date:
+# Author: Ryan Ciupak
+# Date: October 7, 2026
 # Purpose: Create Simple Functions.
 # Usage: ./lab4a.py
 
-# TODO 1: Define a function with the name 'is_even' with the parameters listed in README.md
+def is_even(lst):
+    '''
+    This will determine if a list has an even number in it.
+    @param: A list
+    @return: True or False
+    '''
+    for i in lst:
+        if i % 2 == 0:
+            return True
+    return False        
 
-    # TODO 2: Add the following doc-strings:
-    # - @function: add the definition of the function here
-    # - @param: write the parameters here
-    # - @return: write the return value here
+x = [1, 3, 6, 7, 9, 12]
 
-    # TODO 3: Create the functionality as described in the README.md file
-
-    # TODO 4: Do not forge to return your resulting value
-
-# TODO 5: Call the function `is_even` to confirm it works
+print(is_even(x))
