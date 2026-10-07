@@ -1,13 +1,23 @@
 # Add comments before you do anything else.
 #!/usr/bin/env python3
-# Author:
-# Date:
+# Author: Ryan Ciupak
+# Date: October 7, 2026
 # Purpose: use the main Function as entry point.
 # Usage: ./lab4c.py
 
-# TODO 1: Create a function called 'sum' which takes two numbers as parameters and returns the sum
+def sum(num1, num2):
+    '''
+    This function will add two numbers together.
+    @param Two integers
+    @return sum
+    '''
+    total = num1 + num2
+    return total
 
-# TODO 2: Create the 'main' function, which reads input for two numbers from the user, then calls the sum function
+def main():
+    x = int(input("Please select a number: "))
+    y = int(input("Please select another number: "))
+    print(sum(x, y))
 
-# TODO 3: Call your main function with the specific condition presented in README.md
-
+if __name__ == "__main__":
+    main()
