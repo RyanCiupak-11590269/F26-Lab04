@@ -1,22 +1,42 @@
 # Add comments before you do anything else.
 
 #!/usr/bin/env python3
-# Author:
-# Date:
+# Author: Ryan Ciupak
+# Date: October 7, 2026
 # Purpose: Create the complete calculator function using default parameters and positional parameters
 # Usage: ./lab4d.py
 
-# TODO 1: Create a function called 'compute' based on README.md and print the result
+def compute(num1, num2, opperation="+"):
+    '''
+    This function will compute 2 given numbers and a given opperation
+    @param 2 integers and an opperation
+    @return The integers computed by the opperation
+    '''
+    if opperation == "*":
+        result = num1 * num2
+    elif opperation == "/":
+        result = num1 / num2
+    elif opperation == "+":
+        result = num1 + num2
+    elif opperation == "-":
+        result = num1 - num2
+    else:
+        return "ERROR"
+    return print(result)
 
-    # TODO 2: Perform the required operation based on parameters
+def main():
+    compute(13,45,'*')
+    
+    compute(13,45,'/')
+    compute(13,45,'-')
+    compute(13,45,'+')
+    compute(13,45)
 
-# TODO 3: Call the 'compute' function 5 times to confirm functionality
-        # 4 calls should use '+', '-', '*', and '/' as the operator parameter
-        # 1 call should use the default operator parameter to confirm it works     
-
-# TODO 4: Create the 'main' function, which reads input for two numbers from the user
-
-    # TODO 5: Perform the compute function using the chosen numbers and operator, then print the result  
+    x = int(input("Enter a number: "))
+    y = int(input("Enter a second number: "))
+    z = input("Enter an opperation (+ addtion, - subtraction, * multiplication, or / division): ")
+    compute(x, y, z)
 
 
-# TODO 6: Call your main function with the same condition as lab4c.py
+if __name__ == "__main__":
+    main()
