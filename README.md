@@ -210,13 +210,15 @@ Keyword parameters (or keyword arguments) are arguments passed to a function by 
 map() applies a function to all items in an iterable.
 
 ```Python
-result = map(lambda x: x * 2, [1, 2, 3])  # Output: [2, 4, 6]
+result = list(map(lambda x: x * 2, [1, 2, 3]))  # Output: [2, 4, 6]
 ```
 
 filter() selects items from an iterable based on a function that returns True or False.
 
+Note*: Both map and filter perform "lazy" operations, performing the operations as specified in the lambda, but requiring a type conversion to convert the result into a list.
+
 ```Python
-result = filter(lambda x: x > 2, [1, 2, 3, 4])  # Output: [3, 4]
+result = list(filter(lambda x: x > 2, [1, 2, 3, 4]))  # Output: [3, 4]
 ```
 
 lambda creates small, anonymous functions for quick, on-the-fly use.
